@@ -1,9 +1,386 @@
-*{
+/* Initial CSS */
+
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    color: #161616;
+}
+
+.container {
+    width: 1321px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+.large-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.375rem;
+    line-height: 5rem;
+}
+
+.btn-regular {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+    background: #DD0000;
+    border-radius: 5px;
+    padding: 16px 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 300ms ease-in-out;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    color: #161616;
+}
+
+/*----------------------------
+    Header 
+------------------------------*/
+header {
+    margin-top: 50px;
+    margin-bottom: 130px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: #161616;
+    border-radius: 30px;
+    padding-top: 25px;
+}
+
+.banner-info {
+    width: 50%;
+    margin-right: 24px;
+    padding-left: 106px;
+}
+
+.banner-info h1 {
+    margin-top: 0;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.banner-info>p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.banner-image {
+    width: 50%;
+}
+
+.banner-image img {
+    width: 581px;
+    height: 613px;
+    display: block;
+}
+
+.regular-header {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    color: #161616;
+}
+
+/*----------------------------
+    Match Section
+------------------------------*/
+.match-area {
+    display: flex;
+    margin-bottom: 130px;
+}
+
+.match-menu {
+    height: 100%;
+    width: 312px;
+    background: #161616;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.match-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.match-navigation li a {
+    display: block;
+    width: 100%;
+    color: #161616;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 5px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    transition: all 300ms ease-in-out;
+    border: 1px solid #ddd;
+}
+
+.match-navigation li:last-child a {
+    margin-bottom: 0;
+}
+
+.match-navigation li a:hover,
+.match-active {
+    color: #FFFFFF !important;
+    background: #DD0000 !important;
+}
+
+.matches {
+    width: calc(100% - 312px - 24px);
+    margin-left: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+
+}
+
+.match {
+    box-shadow: 0 0 2px #ddd;
+}
+
+.match-thumb {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.match-info {
+    padding: 0 20px;
+}
+
+.match-button {
+    border: 1px solid #161616;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #161616;
+    transition: all 300ms ease-in-out;
+    display: inline-block;
+}
+
+.match-button:hover {
+    color: #FFFFFF;
+    background: #DD0000;
+}
+
+.match-info>h2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.duration-comment {
+    display: flex;
+}
+
+.duration,
+.duration-comment {
+    margin-right: 30px;
+    font-size: 1rem;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+/* -------------------
+    Footer 
+----------------------*/
+footer {
+    background: #161616;
+}
+
+.goal {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.goal h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.footer-nav,
+.social-nav {
+    padding: 50px 0;
+}
+
+.footer-nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-navigation a {
+    color: #B9B9B9;
+    padding: 10px 20px;
+}
+
+.footer-navigation a:hover {
+    color: #DD0000
+}
+
+/*-----------------------
+    Match Pages
+------------------------*/
+.match-vs-match {
+    padding: 52px 30px;
+    box-shadow: 0 0 2px #ddd;
+}
+
+.match-vs-mantch-top {
+    display: grid;
+    grid-template-columns: 93px auto 93px;
+    justify-content: space-between;
+}
+
+.match-vs-mantch-bottom {
+    text-align: center;
+}
+
+.match-vs-mantch-bottom h2 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: #161616;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.match-vs-mantch-bottom p {
+    color: #4D4D4D;
+    margin-bottom: 0;
+}
+
+/*----------------------------------
+    Responsive CSS
+-----------------------------------*/
+
+/* Mobile Device */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    header {
+        margin-top: 10px;
+        margin-bottom: 24px;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-info {
+        width: 100%;
+        margin-right: 0;
+        padding: 38px 28px;
+        text-align: center;
+    }
+
+    .large-header {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    .banner-info>p {
+        font-size: 0.875rem;
+        line-height: 1.50rem;
+        margin-bottom: 16px;
+    }
+
+    .banner-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-image img {
+        width: 233px;
+        height: 245px;
+    }
+
+    .match-area {
+        display: flex;
+        margin-bottom: 24px;
+        flex-direction: column;
+    }
+
+    .match-menu {
+        background: #FFFFFF;
+    }
+
+    .matches {
+        width: 100%;
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 24px;
+    }
+
+    .goal {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .footer-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-navigation a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .social-nav .footer-navigation {
+        flex-direction: row;
+    }
+
 }
